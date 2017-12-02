@@ -75,6 +75,18 @@ public class StreamMapFilter {
 		rollNums.stream().forEach(System.out::print);
 		
 		
+		/**
+		 * toArray(). To add elements of arrayList to Array.
+		 */
+		
+		System.out.println("");
+		Integer[] rollNumArray = rollNums.stream().toArray(Integer[] :: new);
+		System.out.print("Prining elements of array : ");
+		for(Integer i : rollNumArray){
+			System.out.print(i + ",");
+		}
+		
+		
 		
 		
 		
